@@ -3,12 +3,13 @@ import {motion} from 'framer-motion'
 
 import {styles} from '../style'
 import {github} from '../assets'
+import { deploy } from "../assets"
 import {SectionWrapper} from '../hoc'
 import {projects} from '../constants'
 
 import {fadeIn,textVariant} from '../utils/motion'
 
-const ProjectCard=({index,name,description,tags,image,source_code_link})=>{
+const ProjectCard=({index,name,description,tags,image,source_code_link,deploy_link})=>{
    return(
       <motion.div variants={fadeIn("up","spring",index*0.5,0.75)}>
       <Tilt
@@ -25,7 +26,10 @@ const ProjectCard=({index,name,description,tags,image,source_code_link})=>{
             className="w-full h-full object-cover rounded-2xl"
            />
            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-              <div onClick={()=>window.open(source_code_link,"_blank")} className="black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer">
+              <div onClick={()=>window.open(deploy_link,"_blank")} className="black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer mx-1">
+                <img src={deploy} alt="github" className="h-1/2 w-1/2 object-contain" />
+              </div>
+              <div onClick={()=>window.open(source_code_link,"_blank")} className="black-gradient h-10 w-10 rounded-full flex justify-center items-center cursor-pointer mx-1">
                 <img src={github} alt="github" className="h-1/2 w-1/2 object-contain" />
               </div>
 

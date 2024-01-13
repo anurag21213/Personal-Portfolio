@@ -19,12 +19,19 @@ import {
     starbucks,
     tesla,
     shopify,
+    arogyawala,
+    ineubytes,
+    TCP,
     carrent,
     jobit,
     tripguide,
     threejs,
+    arogya,
+    estate
+    
   } from "../assets";
   
+
   export const navLinks = [
     {
       id: "about",
@@ -46,7 +53,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "React Developer",
       icon: mobile,
     },
     {
@@ -54,7 +61,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "C++",
       icon: creator,
     },
   ];
@@ -71,10 +78,6 @@ import {
     {
       name: "JavaScript",
       icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
     },
     {
       name: "React JS",
@@ -108,19 +111,15 @@ import {
       name: "figma",
       icon: figma,
     },
-    {
-      name: "docker",
-      icon: docker,
-    },
   ];
   
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      company_name: "Arogyawala",
+      icon: arogyawala,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Jan 2023 - Aug 2023",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -129,44 +128,32 @@ import {
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Internship at Ineubytes",
+      company_name: "Ineubytes",
+      icon: ineubytes,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Sep 2023 - Oct 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Developing and maintaining web applications according to task assigned.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Responsibility of developing visually appealing ui.",
+       
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Participated in Code Utsava 7.0",
+      company_name: "NIT Raipur",
+      icon: TCP,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "1 Nov 2023 - 2 Nov 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Codeutsava is an annual hackathon organized by the Turing Club of Programmers at NIT Raipur.",
+        "Hackathons cover various domains such as AR/VR, AI, and ML. ",
+        "We worked in the domain of machine learning.",
+       
       ],
     },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
   ];
   
   const testimonials = [
@@ -198,30 +185,27 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Arogyawala",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A web-based healthcare platform primarily designed to cater to individuals in need of special care following their discharge from the hospital. The platform offers services such as psychology, yoga training, and more.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
           name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: arogya,
       source_code_link: "https://github.com/",
+      deploy_link: "https://www.arogyawala.com/",
     },
     {
-      name: "Job IT",
+      name: "Estate web Application",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables users to search for estate, view estimated price ranges for estate, and locate available estate based on their current location.",
       tags: [
         {
           name: "react",
@@ -232,34 +216,19 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
         {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
+          name: "Nodejs",
           color: "green-text-gradient",
         },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: estate,
+      source_code_link: "https://github.com/anurag21213/Estate-",
+      deploy_link: "https://mern-estate-04cs.onrender.com/",
     },
+    
   ];
   
   export { services, technologies, experiences, testimonials, projects };
